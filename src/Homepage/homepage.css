@@ -1,0 +1,139 @@
+.homeContainer{
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.logoImage{
+    height: 100px;
+}
+
+.leftSection{
+    width: 100%;
+}
+
+.titleSection{
+    display: flex;
+    justify-content: flex-start;
+    color: #3CC3F2;
+    font-family: Alatsi;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.titleHead{
+    margin-left: 10px;
+}
+
+.titleText{
+    margin-top: 10px;
+    font-family: Abel;
+    font-size: 39px;
+}
+
+.content{
+    margin-top: 30px;
+    margin-right: 25px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.formSection{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 40px;
+}
+
+.inputBox{
+    width: 420px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 7px;
+    padding-left: 10px;
+}
+
+.contactButton{
+    height: 65px;
+    width: 165px;
+    font-family: Abel;
+    background-color: orange;
+    color: white;
+    border: 0px;
+    border-radius: 7px;
+    font-size: 32px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.error{
+    color:grey;
+    margin: 5px;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+    .content{
+        width: 640px;
+    }
+} 
+
+
+@media (max-width: 768px) {
+    .homeContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .leftSection {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .titleSection {
+        flex-direction: column;
+        align-items: center;
+        font-size: 50px;
+    }
+
+    .titleHead {
+        margin-left: 0;
+    }
+
+    .titleText {
+        font-size: 30px;
+    }
+
+    .content {
+        font-size: 18px;
+        margin-right: 0;
+    }
+
+    .formSection {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inputBox {
+        width: 90%;
+        max-width: 440px;
+        margin-bottom: 10px;
+    }
+
+    .contactButton {
+        width: 90%;
+        max-width: 175px;
+    }
+} 
+
+
+
