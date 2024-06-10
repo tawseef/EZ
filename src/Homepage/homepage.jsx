@@ -26,7 +26,11 @@ function Homepage() {
       setEmail(res.data.message);
     }catch(e){
       setApiStatus(e.response.status);
-      setApiErrorMessage(e.message);
+      if(email.endsWith("ez.works")){
+        setApiErrorMessage(e.response.data.detail);
+      }else{
+        setApiErrorMessage(e.message);
+      }
     }
   }
 
