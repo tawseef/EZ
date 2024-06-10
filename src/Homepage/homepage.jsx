@@ -24,9 +24,10 @@ function Homepage() {
       setApiStatus(res.status);
       setApiErrorMessage(null);
       setEmail(res.data.message);
+      
     }catch(e){
       setApiStatus(e.response.status);
-      if(email.endsWith("ez.works")){
+      if(email.endsWith("@ez.works")){
         setApiErrorMessage(e.response.data.detail);
       }else{
         setApiErrorMessage(e.message);
