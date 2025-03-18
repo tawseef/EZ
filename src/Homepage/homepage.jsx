@@ -16,15 +16,15 @@ function Homepage() {
 
   const apiCall = async () => {
     try{
-      const res = await axios.post("http://34.225.132.160:8002/api", {email: email}, {
+      // const res = await axios.post("http://3.228.97.110:9000/api", {email: email}, {
+      const res = await axios.post("https://test.ezworks.ai/api", {email: email}, {
         headers: {
             'Content-Type': 'application/json',
         }
     });
       setApiStatus(res.status);
       setApiErrorMessage(null);
-      setEmail(res.data.message);
-      
+      setEmail(res.data.message);      
     }catch(e){
       setApiStatus(e.response.status);
       if(email.endsWith("@ez.works")){
